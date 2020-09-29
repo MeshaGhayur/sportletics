@@ -1,0 +1,205 @@
+body{
+	color:#000;
+}
+section{
+	margin:75px 0;
+}
+.flex{
+	display: flex;
+}
+
+/* Navbar */
+
+.navbar-nav{
+	margin-left:auto;
+}
+.navbar{
+	background-color: #ffcc33;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding:8px 20px;
+}
+#logo{
+	width: 150px;
+	transition: 0.4s;
+}
+
+/* Carousel */
+
+.carousel-caption p{
+	font-size: 25px;
+	margin: 25px auto 75px auto;
+}
+.overlay{
+	background-color: rgba(0,0,0,0.3);
+	height: 100vh;
+	position: absolute;
+	top:0;
+}
+.carousel-item img{
+	height:100vh;
+	width: auto;
+	overflow: hidden;
+}
+
+/* Program Thumbnails */
+
+.prog-thumb-img{
+	position: relative;
+	height: 162px;
+    overflow: hidden;
+}
+.prog-thumb-title{
+	z-index:2;
+	background-color: #ffcc33;
+	padding:0px 5px;
+	text-transform: uppercase;
+	color:#fff;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	left: 7px;
+	margin: 0;
+	width:fit-content;
+	font-weight:bold;
+}
+h1.program-title{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:25px;
+	text-align: center;
+	margin:-5px 25px 25px 25px;
+	line-height: 1em;
+}
+.button{
+	border:2px solid #ffcc33;
+	font-size: 10px;
+	font-weight: bold;
+	padding:10px 25px;
+	letter-spacing: 1.5px;
+	text-transform:uppercase;
+	margin:27px auto 0px auto;
+	width:fit-content;
+
+}
+.prog-thumb-button{
+	background-color:transparent;
+	color: #ffcc33;
+}
+
+/*Our Benefits*/
+.benefits{
+	background: 
+	  linear-gradient(
+      rgba(9, 10, 52, 0.75), 
+      rgba(9, 10, 52, 0.75)
+   	  ),
+      url(../images/benefits-bkg.jpg);
+	background-size: cover;
+	height:auto;
+	text-align:left;
+	color:#fff;
+	padding-top:75px;
+	padding-bottom:57px;
+}
+.benefits-img, .benefits-text{
+	display:inline-block;
+}
+.benefits-text h3{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+.benefits-img{
+	width:18%;
+	vertical-align: top;
+	padding-right:15px;
+}
+.benefits-img img{
+	width:50px;
+
+}
+.benefits-text{
+	width: 74.99%;
+	margin-bottom:18px;
+}
+.yellow-titles{
+    font-size: 5em;
+    font-weight: bold;
+    color:#ffcc33;
+    margin-top:-16px;
+    text-transform: capitalize;
+    line-height: 1em;
+}
+
+/* Testimonials */
+
+.testimonials{
+	background: #fff;
+	box-shadow: 5px 10px 20px #ddd;
+	padding: 30px;
+	text-align:center;
+	border-bottom:4px solid #389ca0;
+}
+.testimonials img{
+	width:80px;
+	margin:20px;
+}
+.testim-name{
+	margin-top:30px;
+}
+.testim-review{
+	font-size: 14px;
+}
+
+/* Partner CTA */
+
+.partner-cta{
+	background: 
+	  linear-gradient(
+      rgba(9, 10, 52, 0.75), 
+      rgba(9, 10, 52, 0.75)
+   	  ),
+      url(../images/benefits-bkg.jpg);
+	background-size: cover;
+	min-height:60vh;
+	max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	padding-top:75px;
+	padding-bottom:57px;
+}
+.partner-cta-button{
+	background-color: #ffcc33;
+	color:#000;
+}
+
+/* Footer */
+
+footer{
+	background-color: #d94930;
+	padding: 50px;
+	color: #fff;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 991.98px) { 
+	.yellow-titles{
+		font-size: 4em;
+	}
+}
+
+@media only screen and (max-width: 767.98px) { 
+	.yellow-titles{
+		font-size: 3em;
+	}
+	.benefits-img, .benefits-text{
+		display:block;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+}
