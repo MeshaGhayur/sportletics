@@ -3,6 +3,7 @@
 }
 body{
 	color:#000;
+	font-size: 18px;
 }
 section{
 	margin:75px 0;
@@ -219,7 +220,7 @@ h1.program-title{
 
 /* Program Types */
 
-.p-box-container{
+/*.p-box-container{
 	position: relative;
 }
 .yellow-p-box{
@@ -235,6 +236,38 @@ h1.program-title{
 	font-size: 2.25em;
 	margin-top:0;
 	margin-bottom: 0.5em;
+}*/
+
+.p-box-container {
+	display: flex;
+	margin-bottom: 40px;
+}
+.p-box-container.reversed {
+	flex-direction: row-reverse;
+}
+.pbox-image .inner-container{
+	width: 140%;
+}
+.pbox-image .inner-container.reversed-img{
+	position: relative;
+	left: -40%;
+}
+.yellow-pbox.outer-container{
+	display: flex;
+	align-items: center;
+}
+.yellow-pbox .inner-container{
+	background-color: #ffcc33;
+	padding:10%;
+}
+.yellow-pbox h2{
+	color:#fff;
+	font-size: 2.5em;
+	margin-top:0;
+	margin-bottom: 0.5em;
+}
+.yellow-pbox p{
+	line-height: 1.7em;
 }
 
 /* Footer */
@@ -271,5 +304,15 @@ footer{
 	}
 	.partner-cta .yellow-titles{
 		margin-top: 0;
+	}
+	.pbox-image .inner-container{
+		width: 100%;
+	}
+	.yellow-pbox h2{
+		font-size: 2em;
+	}
+	.pbox-image .inner-container.reversed-img{
+		position: static;
+		left: 0;
 	}
 }
